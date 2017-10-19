@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AMSTableViewSectionHeader">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6kW-B4-plz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imy-Kg-ghJ">
+                            <rect key="frame" x="81" y="24" width="278" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WtQ-Zp-lp5">
+                            <rect key="frame" x="16" y="14" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="D2b-ui-ezB"/>
+                                <constraint firstAttribute="height" constant="40" id="DgW-67-J6h"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.31744625539999999" green="1" blue="0.18796324889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="imy-Kg-ghJ" firstAttribute="leading" secondItem="WtQ-Zp-lp5" secondAttribute="trailing" constant="25" id="6ck-4A-T01"/>
+                        <constraint firstItem="WtQ-Zp-lp5" firstAttribute="centerY" secondItem="6kW-B4-plz" secondAttribute="centerY" id="9rq-Qf-8DD"/>
+                        <constraint firstAttribute="trailing" secondItem="imy-Kg-ghJ" secondAttribute="trailing" constant="16" id="VZL-KB-EUp"/>
+                        <constraint firstItem="imy-Kg-ghJ" firstAttribute="centerY" secondItem="WtQ-Zp-lp5" secondAttribute="centerY" id="cMl-YC-D5X"/>
+                        <constraint firstItem="WtQ-Zp-lp5" firstAttribute="leading" secondItem="6kW-B4-plz" secondAttribute="leading" constant="16" id="oAB-Dk-AQO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="6kW-B4-plz" secondAttribute="bottom" constant="2" id="anX-kO-iss"/>
+                <constraint firstAttribute="trailing" secondItem="6kW-B4-plz" secondAttribute="trailing" id="h1X-Rf-94k"/>
+                <constraint firstItem="6kW-B4-plz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pe6-De-X1Q"/>
+                <constraint firstItem="6kW-B4-plz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uT5-Ja-fCY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="WtQ-Zp-lp5" id="w4C-H7-0Xn"/>
+                <outlet property="titleLabel" destination="imy-Kg-ghJ" id="5iH-5Q-wy4"/>
+            </connections>
+            <point key="canvasLocation" x="-515.5" y="-611"/>
+        </view>
+    </objects>
+</document>
